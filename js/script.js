@@ -1,11 +1,14 @@
-document.getElementById("enviar").addEventListener("click", validaFormulario)
+document.getElementById("form").addEventListener("submit", (e) => {
+  e.preventDefault()
+  validaFormulario()
+})
 
-function validaFormulario(){
-  if(document.getElementById("nome").value != "" &&
+function validaFormulario() {
+  if (document.getElementById("nome").value != "" &&
     document.getElementById("email").value != "" &&
-    document.getElementById("telefone").value != "" ){
+    document.getElementById("telefone").value != "") {
     alert("Prontinho! você receberá as novidades por email.")
-  }else{
+  } else {
     alert("Por favor, preencha os campos nome e email.")
   }
 }
