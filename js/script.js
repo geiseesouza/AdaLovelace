@@ -3,12 +3,27 @@ document.getElementById("form").addEventListener("submit", (e) => {
   validaFormulario()
 })
 
+const inputName = document.getElementById("nome")
+const inputEmail = document.getElementById("email")
+const inputTelefone = document.getElementById("telefone")
+
+const getMessage = (name, email, telefone) => {
+
+  return `Por favor, preencha os campos: ${!name ? "nome" : ""} ${!email ? "email" : ""} ${!telefone ? "telefone" : ""}`
+}
+
 function validaFormulario() {
-  if (document.getElementById("nome").value != "" &&
-    document.getElementById("email").value != "" &&
-    document.getElementById("telefone").value != "") {
+  const isNameFilled = inputName.value.trim() != ""
+  const isEmailFilled = inputEmail.value.trim() != ""
+  const isTelefoneFilled = inputTelefone.value.trim() != ""
+
+  if (isNameFilled && isEmailFilled && isTelefoneFilled) {
     alert("Prontinho! você receberá as novidades por email.")
+    inputEmail.value = ""
+    inputName.value = ""
+    inputTelefone.value = ""
+
   } else {
-    alert("Por favor, preencha os campos nome e email.")
+    alert(getMessage(isNameFilled, isEmailFilled, isTelefoneFilled))
   }
 }
