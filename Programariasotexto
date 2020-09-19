@@ -1,0 +1,84 @@
+Programaria
+
+O futuro está sendo escrito em linhas de código e o público feminino precisa participar dessa 
+construção. Mulheres, apesar de ser usuárias de redes sociais e dispositivos digitais não 
+participam da produção da tecnologia.
+
+Precisamos falar sobre os desafios das mulheres na área e o que fazer para aumentar sua 
+participação.
+HTML==LInguagem de marcacao de hipertexto-do inglês hyper text markup language
+início da etiqueta => conteudo => etiqueta
+<h1>Programaria</h1>  sintaxe, jeito de escrever
+cabeçalho vai do h1 ao h6
+<h1>Cabeçalho 1</h1>
+<h2>Cabeçalho 2</h2>
+<h3> Cabeçalho 3</h3>
+<h4> Cabeçalho 4</h4>
+<h5>Cabeçalho 5</h5>
+<h6>Cabeçalho 6</h6>
+
+margin:
+section{
+    margin-top:20px;
+    margin-right:40px;
+    margin-boottom:20px;
+    margin-left:40px;
+}
+ou
+section{
+    margin: 20px 40px 20px 40px;
+}
+ou
+section{
+    margin: 20px 40px;
+} 
+4 margens, 2 valores, 1 linha de código.
+1.    Ajustar o tamanho das fontes utilizando font-size (referência https://www.w3schools.com/cssref/pr_font_font-size.asp)
+
+<h1> - 60px
+
+<h2> - 40px
+
+<h3> - 22px
+
+<p> -  20px
+
+
+2.    Ajustar a grossura da fonte utilizando font-weight (referência: https://www.w3schools.com/cssref/pr_font_weight.asp)
+
+<h1> - 300
+
+
+3.    Ajustar a fonte para itálico com font-style (referência: https://www.w3schools.com/cssref/pr_font_font-style.asp)
+
+<h3> - italic
+
+ 
+
+4.    Ajustar a altura das linhas de todos os parágrafos com line-height 1,5
+
+ 
+
+5.    Ajustar a largura das imagens para 100% com width
+
+
+javascript
+
+se condição for verdadeira
+    faz uma ação
+senao
+    faz outra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
